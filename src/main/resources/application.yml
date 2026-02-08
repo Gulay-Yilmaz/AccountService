@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: accountservice
+  datasource:
+    url: jdbc:postgresql://localhost:5432/walletdb
+    username: devuser
+    password: devpassword
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

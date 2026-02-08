@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:15
+    container_name: wallet-db
+    environment:
+      POSTGRES_USER: devuser
+      POSTGRES_PASSWORD: devpassword
+      POSTGRES_DB: walletdb
+    ports:
+      - "5432:5432"
