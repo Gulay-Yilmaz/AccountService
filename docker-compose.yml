@@ -8,3 +8,8 @@ services:
       POSTGRES_DB: walletdb
     ports:
       - "5432:5432"
+  redis:
+    image: redis:7.0-alpine
+    container_name: wallet-redis
+    ports:
+      - "6379:6379"
